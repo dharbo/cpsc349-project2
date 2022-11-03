@@ -1,13 +1,11 @@
 .DS_Store
 
-node_modules/
 npm-debug.log
 
 app/data/database
 app/data/uploads
 
 .env
-.remake
 .cache/
 
 _remake/.sessions
