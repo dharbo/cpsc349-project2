@@ -2,7 +2,15 @@
 module.exports = {
   content: ["./app/**/*.hbs"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "c-primary": '#A437DB'
+      },
+      spacing: {
+        '128': '32rem',
+        '4800': "75rem"
+      },
+    },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }

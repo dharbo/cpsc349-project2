@@ -47,6 +47,7 @@
     "cookie-parser": "^1.4.4",
     "cross-env": "^7.0.3",
     "crostini": "^1.0.3",
+    "daisyui": "^2.38.0",
     "deep-extend": "^0.6.0",
     "deepdash": "^5.3.7",
     "directory-tree": "^2.2.3",
