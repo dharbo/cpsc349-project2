@@ -1,7 +1,21 @@
-<form action="/user/login" method="post">
-  <h1>Log in</h1>
-  <input type="text" name="username" placeholder="username" required>
-  <input type="password" name="password" placeholder="password" required>
-  <a href="/user/forgot">Forgot your password?</a>
-  <button type="submit">Log in</button>
-</form>
+<div class="w-screen flex justify-left">
+  <img src="../../assets/images/icon.jpg" alt="" class="object-fill w-36">
+</div>
+<div class="flex justify-center mt-20">
+  <form action="/user/login" method="post" class="bg-gray-100 rounded-lg max-w-sm h-72">
+    <div class="p-4 flex justify-left flex-col">
+      <h1 class="font-bold mb-3">Login</h1>
+      <input type="text" name="username" placeholder="Username" class="leading-loose mb-1.5 px-3 py-1" required>
+      <input type="password" name="password" placeholder="Password" class="leading-loose mb-1 px-3 py-1" required>
+    </div>
+    <div class="text-center mt-12">
+      <div>
+        <button type="submit" class="bg-violet-300 text-white font-bold py-2 px-7 rounded-full mb-1">Login</button>
+      </div>
+      <div>
+        <a href="/user/forgot" class="text-violet-300 font-bold">Forgot your password?</a>
+      </div>
+    </div>
+  </form>
+</div>
+
