@@ -1,91 +1,51 @@
-<div class="flex m-5">
+<div class="flex m-5" array key="stacks">
+    {{#for stack in stacks}}
     <div class="card w-96 bg-base-100 shadow-xl border-4 border-c-primary m-5">
         <div class="card-body">
 
-        <section>
+            <section object key:day-Heading="@search" default:day-Heading="Error">
+                <h2 class="card-title" target:day-Heading="@innerText">{{stack.dayHeading}}</h2>
 
-        <h2 class="card-title"> Monday's Goals</h2>
+                <hr class="mb-2 h-px bg-c-primary border-0 dark:bg-gray-700">
+                    <section array key="goals">
+                        {{#for goal in stack.goals}}
+                        <section object key:goal-Title="@search" key:goal-Text="@search" edit:goal-Text:without-remove>
+                            <h3 class="text-lg font-semibold" target:goal-Title="@innerText">
+                                {{goal.goalTitle}}
+                            </h3>
+                            <ul class="flex flex-col flex-start mb-1 pl-1 text-lg">
+                                <li target:goal-Text="@innerText">
+                                    {{goal.goalText}}
+                                </li>
+                            </ul>
+                        </section>
+                        {{/for}}
+                    </section>
+            </section>
 
-        <hr class="mb-2 h-px bg-c-primary border-0 dark:bg-gray-700">
+            <h3 class="text-lg font-semibold">
+                    Misc
+            </h3>
 
-        <h3 class="text-lg font-semibold">
-                Weight
-        </h3>
-           <ul class="flex flex-col flex-start mb-1 pl-1 text-lg" array key="todos">
-                <li object key:text="@innerText" edit:text:without-remove>
-                    Log Weight
-                </li>
-        </ul>
-        </section>
+            <!-- I'm going crazy here
 
-        
-        <h3 class="text-lg font-semibold">Calories</h3>
-            <ul class="flex flex-col flex-start mb-1 pl-1 text-lg" array key="todos">
-                <li object key:text="@innerText" edit:text:without-remove>
-                    Log Calories
-                </li>
-        </ul>
-
-        <section>
-
-        <h3 object class="text-lg font-semibold">Misc</h3>
-            <ul class="flex flex-col flex-start mb-1 pl-1 text-lg" array key="todos" sortable>
-            {{#for todo in todos}}
-                <li object key:text="@innerText" edit:text>
-                    {{default todo.text "New misc"}}
-                </li>
+            <section key="miscText" array sortable="miscText"></section>
+            {{#for misc in stack.misc}}
+                <ul class="flex flex-col flex-start mb-1 pl-1 text-lg">
+                    <li object key:text="@innerText" edit:text>
+                        {{default misc.text "New misc"}}
+                    </li>
+                </ul>
             {{/for}}
-        </ul>
-         <div class="card-actions justify-center">
-            <button class="bg-c-primary hover:bg-purple-400 text-white font-bold py-2 px-4 m-3 rounded-full" new:todo>Add</button>
-        </div>
-        </section>
+            </section>
+
+            <div class="card-actions justify-center">
+                <button class="bg-c-primary hover:bg-purple-400 text-white font-bold py-2 px-4 m-3 rounded-full" new:text>Add</button>
+            </div>
+
+            End going crazy-->
 
         </div>
     </div>
-
-    <div class="card w-96 bg-base-100 shadow-xl border-4 border-c-primary m-5">
-        <div class="card-body">
-
-        <section>
-
-        <h2 class="card-title"> Tuesday's Goals</h2>
-
-        <hr class="mb-2 h-px bg-c-primary border-0 dark:bg-gray-700">
-
-        <h3 class="text-lg font-semibold">
-                Weight
-        </h3>
-           <ul class="flex flex-col flex-start mb-1 pl-1 text-lg" array key="todos">
-                <li object key:text="@innerText" edit:text:without-remove>
-                    Log Weight
-                </li>
-        </ul>
-        </section>
-
-        
-        <h3 class="text-lg font-semibold">Calories</h3>
-            <ul class="flex flex-col flex-start mb-1 pl-1 text-lg" array key="todos">
-                <li object key:text="@innerText" edit:text:without-remove>
-                    Log Calories
-                </li>
-        </ul>
-
-        <section>
-
-        <h3 object class="text-lg font-semibold">Misc</h3>
-            <ul class="flex flex-col flex-start mb-1 pl-1 text-lg" array key="todos" sortable>
-            {{#for todo in todos}}
-                <li object key:text="@innerText" edit:text>
-                    {{default todo.text "New misc"}}
-                </li>
-            {{/for}}
-        </ul>
-         <div class="card-actions justify-center">
-            <button class="bg-c-primary hover:bg-purple-400 text-white font-bold py-2 px-4 m-3 rounded-full" new:todo>Add</button>
-        </div>
-        </section>
-
-        </div>
-    </div>
+    {{/for}}
 </div>
