@@ -1,4 +1,91 @@
-<h1 class="text-3x1 font-bold underline text-blue-700">Welcome to the app!</h1>
-<div>[[ Dynamic Remake code goes here]]</div>
-<br><br>
-<a href="https://docs.remaketheweb.com/a-simple-example-app/">Try a simple todo app</a>
+<div class="flex m-5">
+    <div class="card w-96 bg-base-100 shadow-xl border-4 border-c-primary m-5">
+        <div class="card-body">
+
+        <section>
+
+        <h2 class="card-title"> Monday's Goals</h2>
+
+        <hr class="mb-2 h-px bg-c-primary border-0 dark:bg-gray-700">
+
+        <h3 class="text-lg font-semibold">
+                Weight
+        </h3>
+           <ul class="flex flex-col flex-start mb-1 pl-1 text-lg" array key="todos">
+                <li object key:text="@innerText" edit:text:without-remove>
+                    Log Weight
+                </li>
+        </ul>
+        </section>
+
+        
+        <h3 class="text-lg font-semibold">Calories</h3>
+            <ul class="flex flex-col flex-start mb-1 pl-1 text-lg" array key="todos">
+                <li object key:text="@innerText" edit:text:without-remove>
+                    Log Calories
+                </li>
+        </ul>
+
+        <section>
+
+        <h3 object class="text-lg font-semibold">Misc</h3>
+            <ul class="flex flex-col flex-start mb-1 pl-1 text-lg" array key="todos" sortable>
+            {{#for todo in todos}}
+                <li object key:text="@innerText" edit:text>
+                    {{default todo.text "New misc"}}
+                </li>
+            {{/for}}
+        </ul>
+         <div class="card-actions justify-center">
+            <button class="bg-c-primary hover:bg-purple-400 text-white font-bold py-2 px-4 m-3 rounded-full" new:todo>Add</button>
+        </div>
+        </section>
+
+        </div>
+    </div>
+
+    <div class="card w-96 bg-base-100 shadow-xl border-4 border-c-primary m-5">
+        <div class="card-body">
+
+        <section>
+
+        <h2 class="card-title"> Tuesday's Goals</h2>
+
+        <hr class="mb-2 h-px bg-c-primary border-0 dark:bg-gray-700">
+
+        <h3 class="text-lg font-semibold">
+                Weight
+        </h3>
+           <ul class="flex flex-col flex-start mb-1 pl-1 text-lg" array key="todos">
+                <li object key:text="@innerText" edit:text:without-remove>
+                    Log Weight
+                </li>
+        </ul>
+        </section>
+
+        
+        <h3 class="text-lg font-semibold">Calories</h3>
+            <ul class="flex flex-col flex-start mb-1 pl-1 text-lg" array key="todos">
+                <li object key:text="@innerText" edit:text:without-remove>
+                    Log Calories
+                </li>
+        </ul>
+
+        <section>
+
+        <h3 object class="text-lg font-semibold">Misc</h3>
+            <ul class="flex flex-col flex-start mb-1 pl-1 text-lg" array key="todos" sortable>
+            {{#for todo in todos}}
+                <li object key:text="@innerText" edit:text>
+                    {{default todo.text "New misc"}}
+                </li>
+            {{/for}}
+        </ul>
+         <div class="card-actions justify-center">
+            <button class="bg-c-primary hover:bg-purple-400 text-white font-bold py-2 px-4 m-3 rounded-full" new:todo>Add</button>
+        </div>
+        </section>
+
+        </div>
+    </div>
+</div>
