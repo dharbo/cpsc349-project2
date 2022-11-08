@@ -1,91 +1,53 @@
-<div class="flex m-5">
+<!-- Defines top array "stacks"-->
+<div class="flex m-5" array key="stacks">
+    <!-- Iterate Through days predefined in bootstrap.json-->
+    {{#for stack in stacks}}
     <div class="card w-96 bg-base-100 shadow-xl border-4 border-c-primary m-5">
         <div class="card-body">
-
-        <section>
-
-        <h2 class="card-title"> Monday's Goals</h2>
-
-        <hr class="mb-2 h-px bg-c-primary border-0 dark:bg-gray-700">
-
-        <h3 class="text-lg font-semibold">
-                Weight
-        </h3>
-           <ul class="flex flex-col flex-start mb-1 pl-1 text-lg" array key="todos">
-                <li object key:text="@innerText" edit:text:without-remove>
-                    Log Weight
-                </li>
-        </ul>
-        </section>
-
-        
-        <h3 class="text-lg font-semibold">Calories</h3>
-            <ul class="flex flex-col flex-start mb-1 pl-1 text-lg" array key="todos">
-                <li object key:text="@innerText" edit:text:without-remove>
-                    Log Calories
-                </li>
-        </ul>
-
-        <section>
-
-        <h3 object class="text-lg font-semibold">Misc</h3>
-            <ul class="flex flex-col flex-start mb-1 pl-1 text-lg" array key="todos" sortable>
-            {{#for todo in todos}}
-                <li object key:text="@innerText" edit:text>
-                    {{default todo.text "New misc"}}
-                </li>
-            {{/for}}
-        </ul>
-         <div class="card-actions justify-center">
-            <button class="bg-c-primary hover:bg-purple-400 text-white font-bold py-2 px-4 m-3 rounded-full" new:todo>Add</button>
-        </div>
-        </section>
-
-        </div>
-    </div>
-
-    <div class="card w-96 bg-base-100 shadow-xl border-4 border-c-primary m-5">
-        <div class="card-body">
-
-        <section>
-
-        <h2 class="card-title"> Tuesday's Goals</h2>
-
-        <hr class="mb-2 h-px bg-c-primary border-0 dark:bg-gray-700">
-
-        <h3 class="text-lg font-semibold">
-                Weight
-        </h3>
-           <ul class="flex flex-col flex-start mb-1 pl-1 text-lg" array key="todos">
-                <li object key:text="@innerText" edit:text:without-remove>
-                    Log Weight
-                </li>
-        </ul>
-        </section>
-
-        
-        <h3 class="text-lg font-semibold">Calories</h3>
-            <ul class="flex flex-col flex-start mb-1 pl-1 text-lg" array key="todos">
-                <li object key:text="@innerText" edit:text:without-remove>
-                    Log Calories
-                </li>
-        </ul>
-
-        <section>
-
-        <h3 object class="text-lg font-semibold">Misc</h3>
-            <ul class="flex flex-col flex-start mb-1 pl-1 text-lg" array key="todos" sortable>
-            {{#for todo in todos}}
-                <li object key:text="@innerText" edit:text>
-                    {{default todo.text "New misc"}}
-                </li>
-            {{/for}}
-        </ul>
-         <div class="card-actions justify-center">
-            <button class="bg-c-primary hover:bg-purple-400 text-white font-bold py-2 px-4 m-3 rounded-full" new:todo>Add</button>
-        </div>
-        </section>
-
+            <!-- Pulls the heading for each stack-->
+            <section object key:day-Heading="@search" default:day-Heading="Error">
+                <h2 class="card-title" target:day-Heading="@innerText">{{stack.dayHeading}}</h2>
+                <hr class="mb-2 h-px bg-c-primary border-0 dark:bg-gray-700">
+                <!-- Defines sub array "goals"-->
+                <section array key="goals">
+                    <!-- Iterates through goals (of which there are two)-->
+                    {{#for goal in stack.goals}}
+                    <!-- Each goal is in its own section object-->
+                    <section object key:goal-Title="@search" key:goal-Text="@search" edit:goal-Text:without-remove>
+                        <!-- Pull the title and placeholder text, and place them into appropriate containers-->
+                        <h3 class="text-lg font-semibold" target:goal-Title="@innerText">
+                            {{goal.goalTitle}}
+                        </h3>
+                        <ul class="flex flex-col flex-start mb-1 pl-1 text-lg">
+                            <li target:goal-Text="@innerText">
+                                {{goal.goalText}}
+                            </li>
+                        </ul>
+                    </section>
+                    {{/for}}
+                </section>
+                <!-- Hardcoded misc title for simplicity-->
+                <h3 class="text-lg font-semibold">
+                    Misc
+                </h3>
+                <!-- Defines second sortable sub array "miscs"
+                    class "misc-target" is needed for new miscs added to
+                    be placed in the proper place-->
+                <section class="misc-target" array key="miscs" sortable="miscs">
+                    {{#for misc in stack.miscs}}
+                    <section class="flex flex-col flex-start mb-1 pl-1 text-lg" object key:misc-Text="@search" edit:misc-Text>
+                        <p target:misc-Text="@innerText">
+                            {{default misc.miscText "New misc"}}
+                        </p>
+                    </section>
+                    {{/for}}
+                </section>
+                <!-- Button to add a new misc object at "misc-target"-->
+                <div class="card-actions justify-center">
+                    <button class="bg-c-primary hover:bg-purple-400 text-white font-bold py-2 px-4 m-3 rounded-full" new:misc=".misc-target bottom">Add</button>
+                </div>
+            </section>
         </div>
     </div>
+    {{/for}}
 </div>

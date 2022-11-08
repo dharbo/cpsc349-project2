@@ -1,1 +1,131 @@
-{}
+{
+    "boardHeading": "This Week's Goals",
+    "stacks": [
+        {
+            "dayHeading": "Monday's goals",
+            "goals": [
+                {
+                    "goalTitle": "Weight",
+                    "goalText": "Log Weight"
+                },
+                {
+                    "goalTitle": "Calories",
+                    "goalText": "Log Calories"
+                }
+            ],
+            "miscs": [
+                {
+                    "miscText": "Edit Misc"
+                }
+            ]
+        },
+        {
+            "dayHeading": "Tuesday's goals",
+            "goals": [
+                {
+                    "goalTitle": "Weight",
+                    "goalText": "Log Weight"
+                },
+                {
+                    "goalTitle": "Calories",
+                    "goalText": "Log Calories"
+                }
+            ],
+            "miscs": [
+                {
+                    "miscText": "Edit Misc"
+                }
+            ]
+        },
+        {
+            "dayHeading": "Wednesday's goals",
+            "goals": [
+                {
+                    "goalTitle": "Weight",
+                    "goalText": "Log Weight"
+                },
+                {
+                    "goalTitle": "Calories",
+                    "goalText": "Log Calories"
+                }
+            ],
+            "miscs": [
+                {
+                    "miscText": "Edit Misc"
+                }
+            ]
+        },
+        {
+            "dayHeading": "Thursday's goals",
+            "goals": [
+                {
+                    "goalTitle": "Weight",
+                    "goalText": "Log Weight"
+                },
+                {
+                    "goalTitle": "Calories",
+                    "goalText": "Log Calories"
+                }
+            ],
+            "miscs": [
+                {
+                    "miscText": "Edit Misc"
+                }
+            ]
+        },
+        {
+            "dayHeading": "Friday's goals",
+            "goals": [
+                {
+                    "goalTitle": "Weight",
+                    "goalText": "Log Weight"
+                },
+                {
+                    "goalTitle": "Calories",
+                    "goalText": "Log Calories"
+                }
+            ],
+            "miscs": [
+                {
+                    "miscText": "Edit Misc"
+                }
+            ]
+        },
+        {
+            "dayHeading": "Saturday's goals",
+            "goals": [
+                {
+                    "goalTitle": "Weight",
+                    "goalText": "Log Weight"
+                },
+                {
+                    "goalTitle": "Calories",
+                    "goalText": "Log Calories"
+                }
+            ],
+            "miscs": [
+                {
+                    "miscText": "Edit Misc"
+                }
+            ]
+        },
+        {
+            "dayHeading": "Sunday's goals",
+            "goals": [
+                {
+                    "goalTitle": "Weight",
+                    "goalText": "Log Weight"
+                },
+                {
+                    "goalTitle": "Calories",
+                    "goalText": "Log Calories"
+                }
+            ],
+            "miscs": [
+                {
+                    "miscText": "Edit Misc"
+                }
+            ]
+        }
+    ]
+}
