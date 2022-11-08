@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <section>
   <div class="flex flex-col items-center gap-9 h-fit">
     <div><h1 class="text-6xl font-bold text-c-primary">Your New Fitness Logger!</h1></div>
@@ -13,3 +14,42 @@
     </div>
   </div>
 </section>
+=======
+<div class="h-screen flex flex-col">
+  <header>
+    <nav>
+      <div class="navbar bg-base-100 h-48">
+        <div class="flex flex-1">
+          <img class="max-w-sm" src="../assets/images/logo-placeholder-image.png" alt="">  
+        </div>
+        <div class="flex-1 w-1/5 justify-end">
+          <ul class="menu menu-horizontal p-0 space-x-20"> 
+            <li class="text-c-primary font-bold text-4xl"><a href="/user/login">Login</a></li>
+            <li class="btn rounded-full bg-c-primary "><a href="/user/signup">Sign up</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="flex flex-col flex-1 pb-52 items-center gap-12  ">
+      <div>
+        <h1 class="text-6xl font-bold text-c-primary">Your New Fitness Logger!</h1>
+      </div>
+
+      <div class="flex flex-1 w-4/5 justify-center items-center">
+        <img class="rounded-lg max-h-full h-full" src="../assets/images/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png" alt="placeholder image">
+      </div>
+
+      <div>
+        <ul  class="btn rounded-full h-24 bg-c-primary">
+          {{#if currentUser}}
+            <li><a href="/{{currentUser.details.username}}">Go to your dashboard</a></li>
+          {{else}}
+            <li><a class="text-3xl p-8" href="/user/signup">Get Started</a></li>
+          {{/if}}
+        </ul>
+      </div>
+  </section>
+</div>
+>>>>>>> df295d558b9836cc666ffcd6b715d5209e6b9df3
