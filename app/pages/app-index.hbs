@@ -7,44 +7,38 @@
                 <h2 class="card-title" target:day-Heading="@innerText">{{stack.dayHeading}}</h2>
 
                 <hr class="mb-2 h-px bg-c-primary border-0 dark:bg-gray-700">
-                    <section array key="goals">
-                        {{#for goal in stack.goals}}
-                        <section object key:goal-Title="@search" key:goal-Text="@search" edit:goal-Text:without-remove>
-                            <h3 class="text-lg font-semibold" target:goal-Title="@innerText">
-                                {{goal.goalTitle}}
-                            </h3>
-                            <ul class="flex flex-col flex-start mb-1 pl-1 text-lg">
-                                <li target:goal-Text="@innerText">
-                                    {{goal.goalText}}
-                                </li>
-                            </ul>
-                        </section>
-                        {{/for}}
+                <section array key="goals">
+                    {{#for goal in stack.goals}}
+                    <section object key:goal-Title="@search" key:goal-Text="@search" edit:goal-Text:without-remove>
+                        <h3 class="text-lg font-semibold" target:goal-Title="@innerText">
+                            {{goal.goalTitle}}
+                        </h3>
+                        <ul class="flex flex-col flex-start mb-1 pl-1 text-lg">
+                            <li target:goal-Text="@innerText">
+                                {{goal.goalText}}
+                            </li>
+                        </ul>
                     </section>
-            </section>
-
-            <h3 class="text-lg font-semibold">
+                    {{/for}}
+                </section>
+                <h3 class="text-lg font-semibold">
                     Misc
-            </h3>
-
-            <!-- I'm going crazy here
-
-            <section key="miscText" array sortable="miscText"></section>
-            {{#for misc in stack.misc}}
-                <ul class="flex flex-col flex-start mb-1 pl-1 text-lg">
-                    <li object key:text="@innerText" edit:text>
-                        {{default misc.text "New misc"}}
-                    </li>
-                </ul>
-            {{/for}}
+                </h3>
+                <section array key="miscs" sortable="miscs">
+                    {{#for misc in stack.miscs}}
+                    <section object key:misc-Text="@search" edit:misc-Text>
+                        <ul class="flex flex-col flex-start mb-1 pl-1 text-lg">
+                            <li target:misc-Text="@innerText">
+                                {{default misc.miscText "New misc"}}
+                            </li>
+                        </ul>
+                    </section>
+                    {{/for}}
+                    <div class="card-actions justify-center">
+                        <button class="bg-c-primary hover:bg-purple-400 text-white font-bold py-2 px-4 m-3 rounded-full" new:misc>Add</button>
+                    </div>
+                </section>
             </section>
-
-            <div class="card-actions justify-center">
-                <button class="bg-c-primary hover:bg-purple-400 text-white font-bold py-2 px-4 m-3 rounded-full" new:text>Add</button>
-            </div>
-
-            End going crazy-->
-
         </div>
     </div>
     {{/for}}

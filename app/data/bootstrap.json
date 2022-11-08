@@ -15,12 +15,7 @@
             ],
             "miscs": [
                 {
-                    "miscTitle": "Misc",
-                    "miscText": [
-                        {
-                            "text": "Edit Misc"
-                        }
-                    ]
+                    "miscText": "Edit Misc"
                 }
             ]
         },
@@ -38,12 +33,7 @@
             ],
             "miscs": [
                 {
-                    "miscTitle": "Misc",
-                    "miscText": [
-                        {
-                            "text": "Edit Misc"
-                        }
-                    ]
+                    "miscText": "Edit Misc"
                 }
             ]
         },
@@ -61,12 +51,7 @@
             ],
             "miscs": [
                 {
-                    "miscTitle": "Misc",
-                    "miscText": [
-                        {
-                            "text": "Edit Misc"
-                        }
-                    ]
+                    "miscText": "Edit Misc"
                 }
             ]
         },
@@ -84,12 +69,7 @@
             ],
             "miscs": [
                 {
-                    "miscTitle": "Misc",
-                    "miscText": [
-                        {
-                            "text": "Edit Misc"
-                        }
-                    ]
+                    "miscText": "Edit Misc"
                 }
             ]
         },
@@ -107,12 +87,7 @@
             ],
             "miscs": [
                 {
-                    "miscTitle": "Misc",
-                    "miscText": [
-                        {
-                            "text": "Edit Misc"
-                        }
-                    ]
+                    "miscText": "Edit Misc"
                 }
             ]
         }
