@@ -1,13 +1,13 @@
 <!-- Defines top array "stacks"-->
-<div class="flex m-5" array key="stacks">
+<div class="flex m-5 h-80v pt-24" array key="stacks">
     <!-- Iterate Through days predefined in bootstrap.json-->
     {{#for stack in stacks}}
-    <div class="card w-96 bg-base-100 shadow-xl border-4 border-c-primary m-5">
-        <div class="card-body">
+    <div class="card w-96 bg-base-100 m-5">
+        <div class="card-body p-0">
             <!-- Pulls the heading for each stack-->
             <section object key:day-Heading="@search" default:day-Heading="Error">
-                <h2 class="card-title" target:day-Heading="@innerText">{{stack.dayHeading}}</h2>
-                <hr class="mb-2 h-px bg-c-primary border-0 dark:bg-gray-700">
+                <h2 class="card-title text-3xl" target:day-Heading="@innerText">{{stack.dayHeading}}</h2>
+                <hr class="mb-6 h-px bg-c-primary border-0 dark:bg-gray-700">
                 <!-- Defines sub array "goals"-->
                 <section array key="goals">
                     <!-- Iterates through goals (of which there are two)-->
@@ -18,18 +18,47 @@
                         <h3 class="text-lg font-semibold" target:goal-Title="@innerText">
                             {{goal.goalTitle}}
                         </h3>
+                        <hr class="mb-6 h-px bg-c-primary border-0 dark:bg-gray-700">
                         <ul class="flex flex-col flex-start mb-1 pl-1 text-lg">
                             <li target:goal-Text="@innerText">
                                 {{goal.goalText}}
+                                <hr class="mb-6 h-px bg-c-primary border-0 dark:bg-gray-700">
                             </li>
                         </ul>
                     </section>
                     {{/for}}
                 </section>
-                <!-- Hardcoded misc title for simplicity-->
-                <h3 class="text-lg font-semibold">
-                    Misc
+                
+                <h3 class="text-lg font-semibold flex justify-between">
+                    <div>
+                        Activity
+                    </div> 
+                    <div>
+                        <button class="" new:fitness=".fitness-target bottom">Add</button>
+                    </div>
                 </h3>
+                 <hr class="mb-6 h-px bg-c-primary border-0 dark:bg-gray-700">
+                <section class="fitness-target" array key="fitness" sortable="fitness">
+                    {{#for fitness in stack.fitness}}
+                    <section class="flex flex-col flex-start mb-1 pl-1 text-lg" object key:goalText="@search" edit:goalText>
+                        <p target:goalText="@innerText">
+                            {{default fitness.goalText "New Activity"}}
+                        </p>
+                    </section>
+                    <hr class="mb-6 h-px bg-c-primary border-0 dark:bg-gray-700">
+                    {{/for}}
+                </section>
+
+                <!-- Hardcoded misc title for simplicity-->
+                <h3 class="text-lg font-semibold flex justify-between">
+                    <div>
+                        Misc
+                    </div> 
+                    <div>
+                        <button class="" new:misc=".misc-target bottom">Add</button>
+                    </div>
+                </h3>
+                <hr class="mb-6 h-px bg-c-primary border-0 dark:bg-gray-700">
                 <!-- Defines second sortable sub array "miscs"
                     class "misc-target" is needed for new miscs added to
                     be placed in the proper place-->
@@ -40,11 +69,11 @@
                             {{default misc.miscText "New misc"}}
                         </p>
                     </section>
+                    <hr class="mb-6 h-px bg-c-primary border-0 dark:bg-gray-700">
                     {{/for}}
                 </section>
                 <!-- Button to add a new misc object at "misc-target"-->
                 <div class="card-actions justify-center">
-                    <button class="bg-c-primary hover:bg-purple-400 text-white font-bold py-2 px-4 m-3 rounded-full" new:misc=".misc-target bottom">Add</button>
                 </div>
             </section>
         </div>

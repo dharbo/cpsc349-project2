@@ -2,7 +2,7 @@
     "boardHeading": "This Week's Goals",
     "stacks": [
         {
-            "dayHeading": "Monday's goals",
+            "dayHeading": "Monday",
             "goals": [
                 {
                     "goalTitle": "Weight",
@@ -13,6 +13,12 @@
                     "goalText": "Log Calories"
                 }
             ],
+            "fitness":[
+                {
+                    "fitnessTitle": "Activity",
+                    "goalText": "Log Activity"
+                }
+            ],
             "miscs": [
                 {
                     "miscText": "Edit Misc"
@@ -20,7 +26,7 @@
             ]
         },
         {
-            "dayHeading": "Tuesday's goals",
+            "dayHeading": "Tuesday",
             "goals": [
                 {
                     "goalTitle": "Weight",
@@ -31,6 +37,12 @@
                     "goalText": "Log Calories"
                 }
             ],
+            "fitness":[
+                {
+                    "fitnessTitle": "Activity",
+                    "goalText": "Log Activity"
+                }
+            ],
             "miscs": [
                 {
                     "miscText": "Edit Misc"
@@ -38,7 +50,7 @@
             ]
         },
         {
-            "dayHeading": "Wednesday's goals",
+            "dayHeading": "Wednesday",
             "goals": [
                 {
                     "goalTitle": "Weight",
@@ -49,6 +61,12 @@
                     "goalText": "Log Calories"
                 }
             ],
+            "fitness":[
+                {
+                    "fitnessTitle": "Activity",
+                    "goalText": "Log Activity"
+                }
+            ],
             "miscs": [
                 {
                     "miscText": "Edit Misc"
@@ -56,7 +74,7 @@
             ]
         },
         {
-            "dayHeading": "Thursday's goals",
+            "dayHeading": "Thursday",
             "goals": [
                 {
                     "goalTitle": "Weight",
@@ -67,6 +85,12 @@
                     "goalText": "Log Calories"
                 }
             ],
+            "fitness":[
+                {
+                    "fitnessTitle": "Activity",
+                    "goalText": "Log Activity"
+                }
+            ],
             "miscs": [
                 {
                     "miscText": "Edit Misc"
@@ -74,7 +98,7 @@
             ]
         },
         {
-            "dayHeading": "Friday's goals",
+            "dayHeading": "Friday",
             "goals": [
                 {
                     "goalTitle": "Weight",
@@ -85,6 +109,12 @@
                     "goalText": "Log Calories"
                 }
             ],
+            "fitness":[
+                {
+                    "fitnessTitle": "Activity",
+                    "goalText": "Log Activity"
+                }
+            ],
             "miscs": [
                 {
                     "miscText": "Edit Misc"
@@ -92,7 +122,7 @@
             ]
         },
         {
-            "dayHeading": "Saturday's goals",
+            "dayHeading": "Saturday",
             "goals": [
                 {
                     "goalTitle": "Weight",
@@ -103,6 +133,11 @@
                     "goalText": "Log Calories"
                 }
             ],
+            "fitness":[
+                {
+                    "goalText": "Log Activity"
+                }
+            ],
             "miscs": [
                 {
                     "miscText": "Edit Misc"
@@ -110,7 +145,7 @@
             ]
         },
         {
-            "dayHeading": "Sunday's goals",
+            "dayHeading": "Sunday",
             "goals": [
                 {
                     "goalTitle": "Weight",
@@ -119,6 +154,12 @@
                 {
                     "goalTitle": "Calories",
                     "goalText": "Log Calories"
+                }
+            ],
+            "fitness":[
+                {
+                    "fitnessTitle": "Activity",
+                    "goalText": "Log Activity"
                 }
             ],
             "miscs": [
