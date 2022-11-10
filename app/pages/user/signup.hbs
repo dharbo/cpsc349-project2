@@ -1,18 +1,22 @@
 <main class="flex justify-center h-screen">
-  <form action="/user/signup" method="post">
-    <div class="bg-gray-100 w-96 p-6 rounded-3xl shadow-sm">
-
-      <h1 class="text-lg font-bold pb-2">Sign up</h1>
-      <input class="w-full py-2 bg-gray-50 text-gray-500 px-1 outline-none mb-4" type="text" name="username" placeholder="Username" required>
-      <input class="w-full py-2 bg-gray-50 text-gray-500 px-1 outline-none mb-4" type="email" name="email" placeholder="Email" required>
-      <input class="w-full py-2 bg-gray-50 text-gray-500 px-1 outline-none mb-4" type="password" name="password" placeholder="Password" required>
-      
-      <div class="flex flex-col justify-center">
-        <button class="bg-c-primary hover:bg-purple-400 text-white font-bold py-2 px-4 m-3 rounded-full" type="submit">Sign up</button>
-        <a class="text-center text-c-primary" href="login">Log in</a>
+<div class="h-80v w-full flex justify-center items-center">
+    <div class="flex h-2/4 w-2/6 ">
+      <div class="card bg-card-primary text-primary-content flex flex-1 ">
+        <div class="card-body w-full">
+          <form action="user/signup" method="post" class="flex flex-1 flex-col justify-between pb-20">
+            <h2 class="card-title text-black font-bold text-3xl h-1/6">Sign up</h2>
+            <div class="flex flex-col h-3/6 gap-3">
+              <input type="text" name="username" placeholder="Your username" class="text-black text-xl px-2.5 h-1/2 text-2xl rounded-lg" required>
+              <input class="text-black text-xl px-2.5 h-1/2 text-2xl rounded-lg" type="email" name="email" placeholder="Email" required>
+              <input type="password" name="password" placeholder="Password" class="leading-loose mb-1 px-2.5 py-1 h-1/2 text-2xl rounded-lg" required>
+            </div>
+            <button type="submit" class="btn rounded-lg bg-pale-purple">Login</button>
+          </form>
+          </div>
+        </div>
       </div>
-  
     </div>
-</form>
+</div>
+
 
 </main>

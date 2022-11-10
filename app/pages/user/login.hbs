@@ -1,17 +1,18 @@
-<div class="flex justify-center mt-20">
-  <form action="/user/login" method="post" class="bg-gray-100 rounded-lg max-w-sm h-72">
-    <div class="p-4 flex justify-left flex-col">
-      <h1 class="font-bold mb-3">Login</h1>
-      <input type="text" name="username" placeholder="Username" class="leading-loose mb-1.5 px-3 py-1" required>
-      <input type="password" name="password" placeholder="Password" class="leading-loose mb-1 px-3 py-1" required>
-    </div>
-    <div class="text-center mt-12">
-      <div>
-        <button type="submit" class="bg-violet-300 text-white font-bold py-2 px-7 rounded-full mb-1">Login</button>
+<main class="h-80v w-full flex justify-center items-center">
+    <div class="flex h-2/4 w-2/6 ">
+      <div class="card bg-card-primary text-primary-content flex flex-1 ">
+        <div class="card-body w-full">
+          <form action="/user/login" method="post" class="flex flex-1 flex-col justify-between pb-20">
+            <h2 class="card-title text-black font-bold text-3xl h-1/6">Login</h2>
+            <div class="flex flex-col h-3/6 gap-3">
+              <input type="text" name="username" placeholder="Your username" class="text-black text-xl px-2.5 h-1/2 text-2xl rounded-lg" required>
+              <input type="password" name="password" placeholder="Password" class="leading-loose mb-1 px-2.5 py-1 h-1/2 text-2xl rounded-lg" required>
+            </div>
+            <button type="submit" class="btn rounded-lg bg-pale-purple">Login</button>
+          </form>
+          <a class="text-black text-xl self-center" href="/forgot">Forgot Password</a>
+          </div>
+        </div>
       </div>
-      <div>
-        <a href="/user/forgot" class="text-violet-300 font-bold">Forgot your password?</a>
-      </div>
     </div>
-  </form>
-</div>
+</main>
