@@ -1,7 +1,15 @@
-<div class="flex flex-col flex-wrap">
+<div object>
+   <div class="flex flex-1 justify-center js-reset-data">
+        <section>
+            <button class="btn text-xl js-reset-data" new:week>Add Week</button>
+        </section>
+    </div>
+
+<div array key="weeks" class="flex flex-col flex-wrap">
+    {{#for week in weeks}}
     <div class="flex flex-wrap flex-1 m-5 h-80v pt-24 justify-center" array key="stacks">
         <!-- Iterate Through days predefined in bootstrap.json-->
-        {{#for stack in stacks}}
+        {{#for stack in week.stacks}}
         <div class="card w-96 bg-base-100 m-4">
             <div class="card-body p-0">
                 <!-- Pulls the heading for each stack-->
@@ -65,17 +73,11 @@
                         </section>
                         {{/for}}
                     </section>
-                    <!-- Button to reset items"-->
-                    <div class="card-actions justify-center">
-                    </div>
                 </section>
             </div>
         </div>
         {{/for}}
     </div>
-    <div class="flex flex-1 justify-center js-reset-data">
-        <section>
-            <button class="btn text-xl js-reset-data" new:stack>Add Day</button>
-        </section>
-    </div>
+    {{/for}}
+</div>
 </div>
