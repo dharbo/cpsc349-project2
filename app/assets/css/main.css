@@ -2611,6 +2611,42 @@ html {
   height: 50%;
 }
 
+.h-50v {
+  height: 50vh;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
+.h-1\/4 {
+  height: 25%;
+}
+
+.h-1\/5 {
+  height: 20%;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
+.h-60 {
+  height: 15rem;
+}
+
+.h-80 {
+  height: 20rem;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.h-70v {
+  height: 70vh;
+}
+
 .max-h-full {
   max-height: 100%;
 }
@@ -2643,8 +2679,24 @@ html {
   width: 33.333333%;
 }
 
+.w-2\/3 {
+  width: 66.666667%;
+}
+
+.w-1\/4 {
+  width: 25%;
+}
+
 .max-w-md {
   max-width: 28rem;
+}
+
+.max-w-lg {
+  max-width: 32rem;
+}
+
+.max-w-xl {
+  max-width: 36rem;
 }
 
 .flex-1 {
@@ -2685,6 +2737,10 @@ html {
 
 .gap-3 {
   gap: 0.75rem;
+}
+
+.gap-20 {
+  gap: 5rem;
 }
 
 .space-x-20 > :not([hidden]) ~ :not([hidden]) {
@@ -2731,6 +2787,11 @@ html {
 .bg-pale-purple {
   --tw-bg-opacity: 1;
   background-color: rgb(179 171 210 / var(--tw-bg-opacity));
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .object-fill {
@@ -2804,6 +2865,11 @@ html {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .font-bold {
