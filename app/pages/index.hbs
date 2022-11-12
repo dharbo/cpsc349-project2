@@ -1,7 +1,7 @@
 <div class="h-screen flex flex-col">
   <main class="flex flex-col flex-1 pb-52 items-center gap-12  ">
       <div>
-        <h1 class="text-6xl font-bold text-c-primary">Your New Fitness Logger!</h1>
+        <h1 class="text-5xl font-bold text-c-primary">Your New Fitness Logger!</h1>
       </div>
 
       <div class="flex flex-1 w-4/5 justify-center items-center">
@@ -9,7 +9,7 @@
       </div>
 
       <div>
-        <ul  class="btn rounded-full h-24 bg-c-primary">
+        <ul  class="btn rounded-full h-20 bg-c-primary">
           {{#if currentUser}}
             <li><a href="/{{currentUser.details.username}}">Go to your dashboard</a></li>
           {{else}}
