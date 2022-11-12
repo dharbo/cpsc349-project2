@@ -11,9 +11,9 @@
       <div>
         <ul  class="btn rounded-full h-20 bg-c-primary">
           {{#if currentUser}}
-            <li><a href="/{{currentUser.details.username}}">Go to your dashboard</a></li>
+            <li><a  class="text-2xl btn rounded-full h-10 bg-c-primary" href="/{{currentUser.details.username}}">Go to your dashboard</a></li>
           {{else}}
-            <li><a class="text-3xl p-8" href="/user/signup">Get Started</a></li>
+            <li><a class=" text-2xl btn rounded-full h-24 px-10 bg-c-primary" href="/user/signup">Get Started</a></li>
           {{/if}}
         </ul>
       </div>
