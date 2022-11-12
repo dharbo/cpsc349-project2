@@ -1,18 +1,9 @@
 {
-    "boardHeading": "This Week's Goals",
     "stacks": [
         {
             "dayHeading": "Monday",
-            "goals": [
-                {
-                    "goalTitle": "Weight",
-                    "goalText": "Log Weight"
-                },
-                {
-                    "goalTitle": "Calories",
-                    "goalText": "Log Calories"
-                }
-            ],
+            "weight": "Log Weight",
+            "calCount": "Log Calories",
             "fitness":[
                 {
                     "fitnessTitle": "Activity",
@@ -27,16 +18,8 @@
         },
         {
             "dayHeading": "Tuesday",
-            "goals": [
-                {
-                    "goalTitle": "Weight",
-                    "goalText": "Log Weight"
-                },
-                {
-                    "goalTitle": "Calories",
-                    "goalText": "Log Calories"
-                }
-            ],
+            "weight": "Log Weight",
+            "calCount": "Log Calories",
             "fitness":[
                 {
                     "fitnessTitle": "Activity",
@@ -51,16 +34,8 @@
         },
         {
             "dayHeading": "Wednesday",
-            "goals": [
-                {
-                    "goalTitle": "Weight",
-                    "goalText": "Log Weight"
-                },
-                {
-                    "goalTitle": "Calories",
-                    "goalText": "Log Calories"
-                }
-            ],
+            "weight": "Log Weight",
+            "calCount": "Log Calories",
             "fitness":[
                 {
                     "fitnessTitle": "Activity",
@@ -75,16 +50,8 @@
         },
         {
             "dayHeading": "Thursday",
-            "goals": [
-                {
-                    "goalTitle": "Weight",
-                    "goalText": "Log Weight"
-                },
-                {
-                    "goalTitle": "Calories",
-                    "goalText": "Log Calories"
-                }
-            ],
+            "weight": "Log Weight",
+            "calCount": "Log Calories",
             "fitness":[
                 {
                     "fitnessTitle": "Activity",
@@ -99,16 +66,8 @@
         },
         {
             "dayHeading": "Friday",
-            "goals": [
-                {
-                    "goalTitle": "Weight",
-                    "goalText": "Log Weight"
-                },
-                {
-                    "goalTitle": "Calories",
-                    "goalText": "Log Calories"
-                }
-            ],
+            "weight": "Log Weight",
+            "calCount": "Log Calories",
             "fitness":[
                 {
                     "fitnessTitle": "Activity",
@@ -123,16 +82,8 @@
         },
         {
             "dayHeading": "Saturday",
-            "goals": [
-                {
-                    "goalTitle": "Weight",
-                    "goalText": "Log Weight"
-                },
-                {
-                    "goalTitle": "Calories",
-                    "goalText": "Log Calories"
-                }
-            ],
+            "weight": "Log Weight",
+            "calCount": "Log Calories",
             "fitness":[
                 {
                     "goalText": "Log Activity"
@@ -146,16 +97,8 @@
         },
         {
             "dayHeading": "Sunday",
-            "goals": [
-                {
-                    "goalTitle": "Weight",
-                    "goalText": "Log Weight"
-                },
-                {
-                    "goalTitle": "Calories",
-                    "goalText": "Log Calories"
-                }
-            ],
+            "weight": "Log Weight",
+            "calCount": "Log Calories",
             "fitness":[
                 {
                     "fitnessTitle": "Activity",
